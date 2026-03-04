@@ -24,7 +24,7 @@ export function checkJailbroken (): boolean {
 
   const jailbroken = uidAfterVal === 0
   log(jailbroken ? 'Already jailbroken' : 'Not jailbroken')
-  if(jailbroken){
+  if (jailbroken) {
     if (typeof CONFIG !== 'undefined' && CONFIG.autoclose && !BinLoader.skip_autoclose) {
       const closeDelay = (typeof CONFIG !== 'undefined' && CONFIG.autoclose_delay) ? CONFIG.autoclose_delay : 0 // set to 20000 for ps4 hen
 
